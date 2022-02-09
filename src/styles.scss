@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  p {
+    margin: 0;
+  }
+
+.action-button {
+    border: none;
+    color: white;
+    padding: 3px 12px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 14px;
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+    } 
+    &.edit {
+        background-color: #1976d2; /* Blue */
+    }
+    &.update {
+        background-color: #4caf50; /* Green */
+    }
+    
+    &.delete {
+        background-color: rgb(221, 0, 49); /* Red */
+    }
+    
+    &.cancel {
+        background-color: #e7e7e7; /* Gray */
+        color: black;
+    }
+  }
